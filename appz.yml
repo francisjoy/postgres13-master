@@ -4,7 +4,7 @@ app:
     notify: fjoy@ecloudcontrol.com
     
 build:
-    version: 13.X
+    version: 13.Z
     env: DEV
     build_file: none
     output_files: output/*.zip
@@ -22,6 +22,8 @@ volumes:
   - claim: postgres-master-data
     mount: /appz/data
     name: data
+    class: openebs-replicated
+    matchLabels: false
     size: 5Gi
     mode: ReadWriteOnce   
     
