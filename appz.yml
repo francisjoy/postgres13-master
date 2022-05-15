@@ -22,8 +22,6 @@ volumes:
   - claim: postgres-master-data
     mount: /appz/data
     name: data
-    class: openebs-replicated
-    matchLabels: false
     size: 5Gi
     mode: ReadWriteOnce   
     
@@ -40,8 +38,8 @@ properties:
     POSTGRESQL_REP_USER: replica
     PGPASSWORD: 
       vault: PGPASSWORD
-    KEYCLOAKDB_PASSWORD:
-      vault: KEYCLOAKDB_PASSWORD
+    PHP_PASSWORD:
+      vault: PHP_PASSWORD
     POSTGRESQL_DOTNET_PASSWORD:
       vault: POSTGRESQL_DOTNET_PASSWORD
     POSTGRESQL_SPRINGBOOTWEB_PASSWORD:
