@@ -4,7 +4,7 @@ app:
     notify: fjoy@ecloudcontrol.com
     
 build:
-    version: 13.Z
+    version: 13.X
     env: DEV
     build_file: none
     output_files: output/*.zip
@@ -40,8 +40,6 @@ properties:
       vault: PGPASSWORD
     PHP_PASSWORD:
       vault: PHP_PASSWORD
-    POSTGRESQL_DOTNET_PASSWORD:
-      vault: POSTGRESQL_DOTNET_PASSWORD
     POSTGRESQL_SPRINGBOOTWEB_PASSWORD:
       vault: POSTGRESQL_SPRINGBOOTWEB_PASSWORD
     
