@@ -1,29 +1,21 @@
 users:
-  - name: springbootweb
-    password: $POSTGRESQL_SPRINGBOOTWEB_PASSWORD
+  - name: openproject
+    password: $POSTGRESQL_OPENPROJECT_PASSWORD
     role: superuser
-  - name: php
-    password: $PHP_PASSWORD
+  - name: francis
+    password: $POSTGRESQL_FRANCIS_PASSWORD
     role: superuser
 databases:
-  - name: springbootweb
-    owner: springbootweb
+  - name: openproject
+    owner: openproject
     tablespace:
       - name: tb1
         location: /appz/data/tb1
-    schemas:
-      - name: schema1
-        authorised_user: springbootweb
-        search_path: true
-  - name: php
-    owner: php
+  - name: francis_db
+    owner: francis
     tablespace:
       - name: tb2
         location: /appz/data/tb2
-    schemas:
-      - name: schema2
-        authorised_user: php
-        search_path: true
    
 restore:
   - database: springbootweb
