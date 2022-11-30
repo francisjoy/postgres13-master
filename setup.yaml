@@ -18,9 +18,9 @@ databases:
         location: /appz/data/tb2
    
 restore:
-  - database: springbootweb
+  - database: francis_db
     source:
       url: 'https://www.ecloudcontrol.com/wp-content/uploads/2021/06/accountsdb-springboot.sql_.zip'
-    user: springbootweb
-    password: $POSTGRESQL_SPRINGBOOTWEB_PASSWORD
-    token: 20220304-0550
+    user: francis
+    password: $POSTGRESQL_FRANCIS_PASSWORD
+    token: 20221130-0055
